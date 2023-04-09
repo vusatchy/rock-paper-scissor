@@ -28,8 +28,8 @@ const computerCard = (state, computerChoice, game, winner) => {
         <div className="result-field-title">THE HOUSE PICKED</div>
         <GameCell key={computerChoice}
                   type={computerChoice}
-                  height={"350px"}
-                  width={"350px"}
+                  height={350}
+                  width={350}
                   overrideRight={0}
                   overrideBottom={0}
                   game={game}
@@ -48,13 +48,11 @@ const emptyCirce = () => {
 const ResultField = (props) => {
     const {userChoice, computerChoice, winner, playAgain, game, syncScore} = props;
     const [state, setState] = useState(STATES.LOADING);
-    console.log("REnder " + state)
     if (state === STATES.LOADING) {
         setTimeout(() => {
             setState(STATES.LOADED)
         }, delayTime)
     } else if (state === STATES.LOADED) {
-        console.log("Else")
         syncScore();
         setTimeout(() => {
             setState(STATES.PLAY_AGAIN)
@@ -66,8 +64,8 @@ const ResultField = (props) => {
             <div className="result-field-title">YOU PICKED</div>
             <GameCell key={userChoice}
                       type={userChoice}
-                      height={"350px"}
-                      width={"350px"}
+                      height={350}
+                      width={350}
                       overrideRight={950}
                       overrideBottom={0}
                       game={game}

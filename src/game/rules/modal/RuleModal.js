@@ -10,7 +10,9 @@ const RuleModal = (props) => {
             <div className="modal-wrapper-title">RULES</div>
             <img src={closeImg} id="modal-wrapper-close-button" onClick={close}/>
         </div>
-        <img className="rules-img" src={getRulesImage(game)}/>
+        <div className="img-wrapper">
+            <img className="rules-img" src={getRulesImage(game)}/>
+        </div>
     </div>
 }
 
