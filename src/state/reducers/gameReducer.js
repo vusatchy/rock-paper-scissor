@@ -31,7 +31,7 @@ const gameData = (gameData = defaultGameData, {type, payload}) => {
         case ACTIONS.SYNC_SCORE:
             return {
                 ...gameData,
-                score: gameData.score + (addScore(gameData.game, gameData.userChoice, gameData.computerChoice) / 2)
+                score: gameData.score + addScore(gameData.game, gameData.userChoice, gameData.computerChoice)
             };
         case ACTIONS.CHANGE_GAME:
             return {
