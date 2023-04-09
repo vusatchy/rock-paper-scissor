@@ -1,0 +1,42 @@
+.score-wrapper {
+    margin: 2% auto auto;
+    position: relative;
+    height: 150px;
+    width: 600px;
+    border-radius: 1rem;
+    border: 4px solid hsl(217 16% 45%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo-img {
+    margin-top: 3%;
+    margin-left: 3%;
+    height: 80%;
+}
+
+.score-cell {
+    height: 80%;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 3%;
+    margin-right: 3%;
+    border: none;
+    border-radius: 1rem;
+}
+
+.score-cell-title {
+    padding-top: 5%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: hsl(229, 64%, 46%);
+}
+
+.score-cell-score {
+    font-size: 3.75rem;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(229, 25%, 31%);
+}

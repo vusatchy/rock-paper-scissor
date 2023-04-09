@@ -1,0 +1,45 @@
+#rules-button {
+    height: 60px;
+    width: 200px;
+    background: transparent;
+    border-radius: 10px;
+    border: solid white;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: white;
+}
+
+#rules-button:hover {
+    cursor: pointer;
+    background: white;
+    color: hsl(237, 49%, 15%);
+}
+
+#change-game-button {
+    height: 60px;
+    width: 200px;
+    background: transparent;
+    border-radius: 10px;
+    border: solid white;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: white;
+}
+
+#change-game-button:hover {
+    cursor: pointer;
+    background: white;
+    color: hsl(237, 49%, 15%);
+}
+
+.rules-button-wrapper {
+    height: 120px;
+    width: 1500px;
+    position: relative;
+    margin: 10% auto auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
